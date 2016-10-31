@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Some of the (linked data) terms I've used.
+Some of the (linked data) terms I've curated.
 
 I'm not planning to abandon this, but it's still best not to trust on my ontologies, but rather choose more supported ones, like [vocab.datex.org/terms](http://vocab.datex.org/terms), [schema.org](https://schema.org) …
 
