@@ -6,7 +6,8 @@ layout: compress
 <head>
   <meta charset="UTF-8">
   <title>Haroens terms</title>
-  <link rel="stylesheet" href="{{site.baseurl}}/src/style.css">
+  {% capture style %}{% include style.scss %}{% endcapture %}
+  <style>{{style | scssify}}</style>
 </head>
 <body>
 <header>
