@@ -1,0 +1,19 @@
+header {
+  border-bottom: .2em solid $c-accent;
+  padding: 1em;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .back {
+    height: 1em;
+    display: block;
+  }
+}

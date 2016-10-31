@@ -1,0 +1,7 @@
+{% for term in site.data[include.data] %}
+<article id="{{term.name}}" class="term">
+<h1><a href="#{{term.name}}" class="hash">#</a> {{term.name}}</h1>
+{{term.description | markdownify}}
+{% if term.type %}type: <code>{{term.type}}</code>{% endif %}
+</article>
+{% endfor %}

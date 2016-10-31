@@ -1,0 +1,31 @@
+html {
+  font-family: $f-system;
+}
+
+code {
+  font-family: $f-monospace;
+}
+
+main {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+a {
+  color: $c-accent;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration: line-through;
+  }
+
+  &.hash {
+    font-size: .8em;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

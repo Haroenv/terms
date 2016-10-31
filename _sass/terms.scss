@@ -1,0 +1,10 @@
+.term {
+  padding: .4em;
+  border: 1px solid transparent;
+  border-radius: .4em;
+  transition: .2s border-color ease;
+
+  &:target {
+    border: 1px solid $c-accent;
+  }
+}

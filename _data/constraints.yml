@@ -1,0 +1,6 @@
+- name: ageRange
+  description: A range of ages (for example allowed in a place)
+  type: schema:PropertyValue
+- name: heightRange
+  description: A range of heights (for example allowed in a place)
+  type: schema:PropertyValue
