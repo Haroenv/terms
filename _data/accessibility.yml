@@ -1,3 +1,4 @@
+values:
 - name: accessible
   description: This `schema:Place` is accessible or not; a blanket statement
-  type: boolean
+  value: boolean

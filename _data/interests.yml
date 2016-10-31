@@ -1,3 +1,5 @@
+type: foaf:interest
+values:
 - name: thrills
   description: Adrenaline, cool stuff
 - name: memes

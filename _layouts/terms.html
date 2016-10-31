@@ -4,3 +4,12 @@ layout: default
 {{content}}
 
 {% include terms.html data=page.data %}
+
+<details>
+  <summary>json-ld</summary>
+  This is the <code>json-ld of this page</code>
+  <pre>
+  <script type="ld+json">{% include terms.jsonld data=page.data %}</script>
+  </pre>
+
+</details>

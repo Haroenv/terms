@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [{
+    "@type": "owl:Ontology",
+    "@id": "{{site.url}}{{site.baseurl}}{{page.url}}",
+    "dct:title": {
+      "@value": "{{include.data}}",
+      "@language": "en"
+    },
+    "dct:creator": "https://haroen.me"
+  }{% for term in site.data[include.data].values %}, {
+    "@type": "owl:Class",
+    "@id": "{{site.url}}{{site.baseurl}}{{page.url}}#{{term.name}}",
+    {% if site.data[include.data].type %}"rdfs:subClassOf": "{{site.data[include.data].type}}",{% endif %}
+    "rdfs:label": {
+      "@value": "{{term.name}}",
+      "@language": "en"
+    },
+    "rdfs:comment": {
+      "@value": "{{term.description}}",
+      "@language": "en"
+    }
+  }{% endfor %}]
+}
